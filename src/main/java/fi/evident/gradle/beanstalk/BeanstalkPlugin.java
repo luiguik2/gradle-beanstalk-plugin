@@ -6,6 +6,7 @@ import org.gradle.api.Project;
 import org.gradle.api.plugins.ExtensionAware;
 
 public class BeanstalkPlugin implements Plugin<Project> {
+
     public void apply(Project project) {
         NamedDomainObjectContainer<BeanstalkDeployment> deployments = project.container(BeanstalkDeployment.class);
         BeanstalkPluginExtension beanstalk = project.getExtensions().create("beanstalk", BeanstalkPluginExtension.class);

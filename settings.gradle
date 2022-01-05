@@ -1,2 +1,8 @@
-rootProject.name = 'gradle-beanstalk-plugin'
+pluginManagement {
+    repositories {
+        mavenLocal()
+    }
+}
+
+//rootProject.name = 'gradle-beanstalk-plugin'
 
